@@ -33,7 +33,6 @@ function Question({ data, onAnswer, questionNumber, total, onNext }) {
               selectedOption === option ? 'active' : ''
             }`}
             onClick={() => handleOptionClick(option)}
-            disabled={selectedOption !== null && option !== selectedOption}
           >
             {option}
           </button>
